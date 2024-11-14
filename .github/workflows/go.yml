@@ -26,7 +26,7 @@ jobs:
         
     - uses: actions/cache@v4
       with:
-        path: ~/Go-Simple-Web-App
+        path: ~/go/pkg/mod
         key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
         restore-keys: |
           ${{ runner.os }}-go-
