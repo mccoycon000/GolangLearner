@@ -23,7 +23,7 @@ jobs:
         
     - uses: actions/cache@v4
       with:
-        path: ~/Go-Simple-Web-App
+        path: ./Go-Simple-Web-App
         key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
         restore-keys: |
           ${{ runner.os }}-go-
